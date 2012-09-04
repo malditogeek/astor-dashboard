@@ -36,3 +36,10 @@ Deployment
 ----------
 
 TBD
+
+TODO
+----
+
+  * Configurable LIVE window (currently 60 datapoints)
+  * Archive buttons (currently showing just -1 day)
+  * Better alert handling
