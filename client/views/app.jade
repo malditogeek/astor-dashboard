@@ -1,0 +1,58 @@
+!!! 5
+html(lang="en")
+  head
+    != SocketStream
+    meta(charset='utf-8')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Astor
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.brand(href='#') Astor
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          .nav-collapse
+            ul.nav
+              li 
+                a(href='#live') Live
+              li 
+                a(href='#archive') Archive
+              li 
+                a(href='#alerts') Alerts 
+
+    .container-fluid
+      .section#live
+        .page-header
+          h1 Live
+        .row-fluid
+          .span3
+            #live_metrics.well.sidebar-nav
+          .span9
+            #chart
+
+      .section#archive
+        .page-header
+          h1 Archive
+        .row-fluid
+          .span3
+            .well
+              .btn-group
+                .btn 1 day
+                .btn 7 days
+                .btn 30 days
+            #archive_metrics.well.sidebar-nav
+          .span9
+            #archive_chart
+
+      .section#alerts
+        .page-header
+          h1 Alerts
+        .row-fluid
+          .span7#alerts_container
+            #alerts_list
+
+      footer.footer
+        a(href='#') Astor is free software, find it here.

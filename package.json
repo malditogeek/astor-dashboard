@@ -1,0 +1,16 @@
+{
+  "name": "astor_dashboard",
+  "description": "Astor Dashboard, real-time data visualization.",
+  "version": "0.0.1",
+  "author": "Mauro Pompilio <hackers.are.rockstars@gmail.com>",
+  "private": true,
+  "engines": { "node": ">= 0.6.0" },
+  "dependencies": {
+    "socketstream": "0.3.x",
+    "ss-coffee": "0.1.x",
+    "ss-jade": "0.1.x",
+    "ss-stylus": "0.1.x",
+    "ss-hogan": "0.1.x",
+    "zmq": "2.1.x"
+  }
+}
