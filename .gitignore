@@ -2,3 +2,14 @@
 *.swo
 .DS_Store
 node_modules
+
+# Bundler
+bin
+.bundle
+
+# Custom deploy.rb
+config/deploy.rb
+config/ec2.yml
+
+# Production assets
+client/static/assets
