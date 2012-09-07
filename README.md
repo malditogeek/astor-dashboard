@@ -1,7 +1,5 @@
-Astor, an alternative to StatsD/Graphite
+Astor, an alternative to StatsD+Graphite
 ========================================
-
-API compatible with StatsD. Replacement for Graphite.
 
 ![Astor Dashboard](http://i.imgur.com/xtTtS.png)
 
@@ -32,10 +30,25 @@ The dashboard consumes data from localhost by default. If you're going to consum
   * app.js
   * client/code/app/entry.coffee
 
+This can be useful if you want to run astor-dashboard locally but consume data from a remote astor-collector.
+
 Deployment
 ----------
 
-TBD
+Once you have a successful deployment of [astor-collector](https://github.com/malditogeek/astor-collector), login into the machine again and do:
+
+        sudo add-apt-repository ppa:chris-lea/node.js
+        sudo apt-get update
+        sudo apt-get install haproxy nodejs npm
+
+Then, on your local clone:
+
+  * Copy _config/deploy.rb.sample_ to _config/deploy.rb_ and customize it with your repository
+  * Copy _config/ec2.yml.sample_ to _config/ec2.yml_ and complete it with [your EC2 keys](http://i.imgur.com/UM9sa.png)
+
+        cap deploy:setup
+        cap deploy
+
 
 TODO
 ----
