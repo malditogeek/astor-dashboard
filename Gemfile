@@ -1,6 +1,6 @@
 source :rubygems
 
-gem 'foreman', '0.57.0'
+gem 'foreman', '0.40.0'
 
 group :development do
   gem 'capistrano'
