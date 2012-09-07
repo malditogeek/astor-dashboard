@@ -41,6 +41,7 @@ Once you have a successful deployment of [astor-collector](https://github.com/ma
         sudo apt-get update
         sudo apt-get install haproxy nodejs npm
 
+  * Edit _/etc/default/haproxy_ and set: ENABLED=1
   * Add port 80 to your [Security Group](http://i.imgur.com/fKi2M.png)
 
 Then, on your local clone:
