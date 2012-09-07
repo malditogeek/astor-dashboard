@@ -41,6 +41,8 @@ Once you have a successful deployment of [astor-collector](https://github.com/ma
         sudo apt-get update
         sudo apt-get install haproxy nodejs npm
 
+  * Add port 80 to your [Security Group](http://i.imgur.com/fKi2M.png)
+
 Then, on your local clone:
 
   * Copy _config/deploy.rb.sample_ to _config/deploy.rb_ and customize it with your repository
