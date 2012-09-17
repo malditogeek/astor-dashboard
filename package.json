@@ -11,6 +11,6 @@
     "ss-jade": "0.1.x",
     "ss-stylus": "0.1.x",
     "ss-hogan": "0.1.x",
-    "zmq": "2.1.x"
+    "zmq": "git://github.com/JustinTulloss/zeromq.node#master"
   }
 }
